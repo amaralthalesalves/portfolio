@@ -1,3 +1,3 @@
 # Thales Amaral
 
-Portfólio pessoal: **[thalesamaral.tech](https://thalesamaral.tech)**
+Personal portfolio, hosted in github pages at the following url: **[thalesamaral.tech](https://thalesamaral.tech)**
