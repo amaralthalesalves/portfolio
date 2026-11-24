@@ -5,7 +5,7 @@
   var EN = {
     role: "AI &amp; Data Engineer",
     bio1: "Software engineer (R&amp;D) at SPEED Lab (DCC/UFMG). Belo Horizonte, Brazil.",
-    bio2: "Computer Science at UFMG. Computer technician degree from CEFET-MG.",
+    bio2: "Computer Science at UFMG. Computer technician degree from the Universidade Federal de Ciência e Inovação de Minas Gerais.",
     bio3: "Experience with AI agents, LLM-based solutions and machine learning.",
     bio4: "In my spare time, I make game mods.",
 
