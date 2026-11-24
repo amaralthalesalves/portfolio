@@ -4,9 +4,9 @@
 (function () {
   var EN = {
     role: "AI &amp; Data Engineer",
-    bio1: "Software engineer (R&amp;D) at SPEED Lab (DCC/UFMG). Belo Horizonte, Brazil.",
-    bio2: "Computer Science at UFMG. Computer technician degree from the Universidade Federal de Ciência e Inovação de Minas Gerais.",
-    bio3: "Experience with AI agents, LLM-based solutions and machine learning.",
+    bio1: "Software engineer (R&amp;D) at <mark>SPEED Lab</mark> (DCC/UFMG). Belo Horizonte, Brazil.",
+    bio2: "<mark>Computer Science</mark> at UFMG. Computer technician degree from the Universidade Federal de Ciência e Inovação de Minas Gerais.",
+    bio3: "Experience with <mark>AI agents</mark>, <mark>LLM</mark>-based solutions and <mark>machine learning</mark>.",
     bio4: "In my spare time, I make game mods.",
 
     edu: "Education",
@@ -45,11 +45,11 @@
     reh_r2: "Software Engineering Trainee",
     d_reh2: "Jun 2025 – Sep 2025",
     points:
-      "<li>Transcription and classification pipeline for 1,000+ educational videos with Whisper, Airflow and PostgreSQL.</li>" +
-      "<li>Monitoring for about 80 Azure VMs with Grafana and Prometheus.</li>" +
-      "<li>LLM agent with tool calling to query VM, cost and network data in natural language.</li>" +
-      "<li>Metadata catalog for the company's main databases in React and FastAPI, integrated with an AI agent.</li>" +
-      "<li>Solutions with RAG, MCP and model evaluation, from requirements gathering with business teams to validation.</li>",
+      "<li>Transcription and classification pipeline for <mark>1,000+ educational videos</mark> with Whisper, Airflow and PostgreSQL.</li>" +
+      "<li>Monitoring for <mark>about 80 Azure VMs</mark> with Grafana and Prometheus.</li>" +
+      "<li><mark>LLM agent</mark> with tool calling to query VM, cost and network data in natural language.</li>" +
+      "<li><mark>Metadata catalog</mark> for the company's main databases in React and FastAPI, integrated with an AI agent.</li>" +
+      "<li>Solutions with <mark>RAG, MCP and model evaluation</mark>, from requirements gathering with business teams to validation.</li>",
     res_d: "Published paper on drug seizures in Divinópolis, with UFSJ and the Minas Gerais Military Police",
     res_r: "Junior Researcher",
     d_res: "Jan 2023 – Dec 2024",
@@ -58,9 +58,28 @@
     ufsj_r: "IT Support Technician",
     d_ufsj: "Oct 2023 – Sep 2024",
 
+    tl: "Timeline",
+    tl_hint: "Hover or tap an item to link the start and end of the activity.",
+    tl_22a: "Started the Computer Technician program at <a href=\"#e-cefet\" data-icon=\"ufcimg\">UFCIMG</a> (former CEFET-MG).",
+    tl_22b: "Gold medal at the <a href=\"#e-awards\">Brazilian National Science Olympiad</a>.",
+    tl_22c: "Class representative.",
+    tl_23a: "Started junior research at <a href=\"#e-pesquisa\" data-icon=\"ufcimg\">UFCIMG</a> on drug seizures in Divinópolis.",
+    tl_23b: "IT support at the Dept. of Toxicology, <a href=\"#e-ufsj\" data-icon=\"ufsj\">UFSJ</a>.",
+    tl_24a: "Finished the technician program, with the <a href=\"#e-cefet\">FruitAdvisor</a> capstone.",
+    tl_24b: "Junior research wrapped up with a published paper, together with UFSJ and the Minas Gerais Military Police.",
+    tl_24c: "Finished IT support at UFSJ.",
+    tl_25a: "Started Computer Science at <a href=\"#e-ufmg\" data-icon=\"ufmg\">UFMG</a>.",
+    tl_25b: "Software Engineering trainee at Rehagro.",
+    tl_25c: "<strong>AI &amp; Data internship</strong> at <a href=\"#e-rehagro\" data-icon=\"rehagro\">Rehagro</a>: AI agents, data pipelines and LLM-based solutions.",
+    tl_26d: "Finished the internship at Rehagro.",
+    tl_26a: "<a href=\"#e-ml\" data-icon=\"deeplearningai\">Machine Learning Specialization</a> (DeepLearning.AI and Stanford).",
+    tl_26b: "Software Engineer (R&amp;D) at <a href=\"#e-speed\" data-icon=\"speed\">SPEED Lab</a>.",
+    tl_26c: "Started <a href=\"#e-athenara\" data-icon=\"athenara\">Athenara</a> and <a href=\"#e-dcchub\" data-icon=\"dcchub\">DCCHub</a>.",
+    tl_29a: "Expected graduation from UFMG.",
+
     proj: "Projects",
     wip: "work in progress",
-    ath_d: "Protection platform for women facing domestic violence: an app with a panic button and a support network, and a dashboard for the team to follow cases, protective orders and alerts.",
+    ath_d: "Protection platform for women facing domestic violence.",
     dcchub_d: "Independent hub for DCC/UFMG students: anonymous reviews of professors and courses, a schedule builder, past exams and research and internship opportunities.",
 
     skills: "Skills",
@@ -78,7 +97,7 @@
 
     alt: "Photo of Thales Amaral",
     contact: "Contact",
-    toc: "Contents",
+    nav: "Navigation",
     cv_pdf: "Résumé (PDF)"
   };
   var META_EN = "Thales Amaral, AI and data engineer. R&D at SPEED Lab (DCC/UFMG) and Computer Science student at UFMG.";

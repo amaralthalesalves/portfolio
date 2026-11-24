@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
+  <meta name="theme-color" content="#000000">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Thales Amaral</title>
   <meta name="description" content="Thales Amaral, engenheiro de IA e dados. P&D no SPEED Lab (DCC/UFMG) e estudante de Ciência da Computação na UFMG.">
@@ -21,95 +22,165 @@
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=IBM+Plex+Mono:wght@400;500&family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Press+Start+2P&display=swap">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+<nav class="bar" aria-label="Navegação" data-i18n-label="nav">
+  <div class="toc" id="toc">
+    <a href="#trajetoria" data-i18n="tl">Trajetória</a>
+    <a href="#formacao" data-i18n="edu">Formação</a>
+    <a href="#experiencia" data-i18n="exp">Experiência</a>
+    <a href="#projetos" data-i18n="proj">Projetos</a>
+    <a href="#competencias" data-i18n="skills">Competências</a>
+    <a href="#contato" data-i18n="contact">Contato</a>
+  </div>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+</nav>
+
 <main class="page">
 
-  <!-- ============ CABEÇALHO ============ -->
-  <header class="intro">
-    <div class="lang" role="group" aria-label="Idioma / Language">
-      <button type="button" data-lang="pt" aria-pressed="true">PT</button>
-      <button type="button" data-lang="en" aria-pressed="false">EN</button>
-    </div>
-    <div class="id">
-      <button class="avatar-btn" type="button" id="avatar-btn">
-        <img class="avatar" id="avatar" src="assets/img/pfp.jpeg" data-i18n-alt="alt" alt="Foto de Thales Amaral" width="144" height="144">
-        <span class="xp" id="xp" hidden><span class="xp__fill" id="xp-fill"></span></span>
-      </button>
-      <div class="id__text">
-        <h1>Thales A. Amaral</h1>
-        <p class="role" data-i18n="role">Engenheiro de IA &amp; Dados</p>
-      </div>
-    </div>
+  <!-- ============ APRESENTAÇÃO ============ -->
+  <header class="hero">
+    <button class="avatar-btn" type="button" id="avatar-btn">
+      <img class="avatar" id="avatar" src="assets/img/pfp.jpeg" data-i18n-alt="alt" alt="Foto de Thales Amaral" width="216" height="216">
+      <span class="xp" id="xp" hidden><span class="xp__fill" id="xp-fill"></span></span>
+    </button>
+    <h1>Thales A. Amaral</h1>
+    <p class="role" data-i18n="role">Engenheiro de IA &amp; Dados</p>
     <div class="bio">
-      <p data-i18n="bio1">Engenheiro de software em P&amp;D no SPEED Lab (DCC/UFMG). Belo Horizonte, MG.</p>
-      <p data-i18n="bio2">Ciência da Computação na UFMG. Técnico em Informática pela Universidade Federal de Ciência e Inovação de Minas Gerais.</p>
-      <p data-i18n="bio3">Experiência com agentes de IA, soluções utilizando LLMs e aprendizado de máquina.</p>
+      <p data-i18n="bio1">Engenheiro de software em P&amp;D no <mark>SPEED Lab</mark> (DCC/UFMG). Belo Horizonte, MG.</p>
+      <p data-i18n="bio2"><mark>Ciência da Computação</mark> na UFMG. Técnico em Informática pela Universidade Federal de Ciência e Inovação de Minas Gerais.</p>
+      <p data-i18n="bio3">Experiência com <mark>agentes de IA</mark>, soluções utilizando <mark>LLMs</mark> e <mark>aprendizado de máquina</mark>.</p>
       <p data-i18n="bio4">Nas horas vagas, crio mods para jogos.</p>
     </div>
-    <nav class="toc" id="toc" aria-label="Índice" data-i18n-label="toc">
-      <a href="#formacao"><b>01</b> <span data-i18n="edu">Formação</span></a>
-      <a href="#experiencia"><b>02</b> <span data-i18n="exp">Experiência</span></a>
-      <a href="#projetos"><b>03</b> <span data-i18n="proj">Projetos</span></a>
-      <a href="#competencias"><b>04</b> <span data-i18n="skills">Competências</span></a>
-      <a href="#contato"><b>05</b> <span data-i18n="contact">Contato</span></a>
-    </nav>
   </header>
 
-  <!-- ============ FORMAÇÃO ============ -->
-  <section class="block" id="formacao" aria-labelledby="h-formacao">
-    <h2 id="h-formacao" data-i18n="edu">Formação</h2>
+  <!-- ============ TRAJETÓRIA ============ -->
+  <!-- um bloco por ano; os nomes em destaque levam até a entrada correspondente nas seções abaixo -->
+  <section class="sec" id="trajetoria" aria-labelledby="h-tl">
+    <div class="sec__side">
+      <h2 id="h-tl" data-i18n="tl">Trajetória</h2>
+      <p class="side-hint" data-i18n="tl_hint">Passe o mouse ou toque num item para ligar o início e o fim da atividade.</p>
+    </div>
+    <div class="sec__body">
+      <ol class="years" id="tl">
+        <li class="year" style="--i:0">
+          <h3 class="year__n">2022</h3>
+          <ul class="year__items">
+            <li data-act="tec" data-i18n="tl_22a">Início do técnico em Informática na <a href="#e-cefet" data-icon="ufcimg">UFCIMG</a> (antigo CEFET-MG).</li>
+            <li data-i18n="tl_22b">Medalha de ouro na <a href="#e-awards">Olimpíada Nacional de Ciências</a>.</li>
+            <li data-i18n="tl_22c">Representante de classe.</li>
+          </ul>
+        </li>
+        <li class="year" style="--i:1">
+          <h3 class="year__n">2023</h3>
+          <ul class="year__items">
+            <li data-act="res" data-i18n="tl_23a">Início da pesquisa júnior na <a href="#e-pesquisa" data-icon="ufcimg">UFCIMG</a>, sobre apreensões de drogas em Divinópolis.</li>
+            <li data-act="ufsj" data-i18n="tl_23b">Suporte de TI no Depto. de Toxicologia da <a href="#e-ufsj" data-icon="ufsj">UFSJ</a>.</li>
+          </ul>
+        </li>
+        <li class="year" style="--i:2">
+          <h3 class="year__n">2024</h3>
+          <ul class="year__items">
+            <li data-act="tec" data-i18n="tl_24a">Conclusão do técnico, com o TCC <a href="#e-cefet">FruitAdvisor</a>.</li>
+            <li data-act="res" data-i18n="tl_24b">Fim da pesquisa júnior, com artigo publicado em parceria com a UFSJ e a PMMG.</li>
+            <li data-act="ufsj" data-i18n="tl_24c">Fim do suporte de TI na UFSJ.</li>
+          </ul>
+        </li>
+        <li class="year" style="--i:3">
+          <h3 class="year__n">2025</h3>
+          <ul class="year__items">
+            <li data-act="ufmg" data-i18n="tl_25a">Início de Ciência da Computação na <a href="#e-ufmg" data-icon="ufmg">UFMG</a>.</li>
+            <li data-i18n="tl_25b">Trainee de Engenharia de Software na Rehagro.</li>
+            <li data-act="reh" data-i18n="tl_25c"><strong>Estágio em IA e Dados</strong> na <a href="#e-rehagro" data-icon="rehagro">Rehagro</a>: agentes de IA, pipelines de dados e soluções com LLMs.</li>
+          </ul>
+        </li>
+        <li class="year year--now" style="--i:4">
+          <h3 class="year__n">2026</h3>
+          <ul class="year__items">
+            <li data-act="reh" data-i18n="tl_26d">Fim do estágio na Rehagro.</li>
+            <li data-i18n="tl_26a"><a href="#e-ml" data-icon="deeplearningai">Machine Learning Specialization</a> (DeepLearning.AI e Stanford).</li>
+            <li data-i18n="tl_26b">Engenheiro de Software (P&amp;D) no <a href="#e-speed" data-icon="speed">SPEED Lab</a>.</li>
+            <li data-i18n="tl_26c">Início do <a href="#e-athenara" data-icon="athenara">Athenara</a> e do <a href="#e-dcchub" data-icon="dcchub">DCCHub</a>.</li>
+          </ul>
+        </li>
+        <li class="year year--future" style="--i:5">
+          <h3 class="year__n">2029</h3>
+          <ul class="year__items">
+            <li data-act="ufmg" data-i18n="tl_29a">Formatura prevista na UFMG.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-    <div class="edu">
-      <article class="card card--edu card--main">
-        <div class="edu__head">
-          <h3>Universidade Federal de Minas Gerais</h3>
-          <span class="tag" data-i18n="ongoing">em curso</span>
+  <!-- ============ FORMAÇÃO ============ -->
+  <section class="sec" id="formacao" aria-labelledby="h-formacao">
+    <div class="sec__side">
+      <h2 id="h-formacao" data-i18n="edu">Formação</h2>
+    </div>
+    <div class="sec__body">
+      <article class="entry" id="e-ufmg">
+        <div class="entry__head">
+          <div class="entry__title">
+            <img class="proj-icon proj-icon--img" src="assets/img/institution-icons/ufmg.png" alt="" width="40" height="40">
+            <h3>Universidade Federal de Minas Gerais</h3>
+          </div>
+          <span class="status" data-i18n="ongoing">em curso</span>
         </div>
-        <p class="line"><span data-i18n="bsc">Bacharelado em Ciência da Computação</span><i></i><span class="date" data-i18n="d_ufmg">mar 2025 – 2029 (previsão)</span></p>
-        <p class="muted" data-i18n="dcc">Departamento de Ciência da Computação (DCC) · Belo Horizonte</p>
-        <p class="sub" data-i18n="core">Disciplinas de base</p>
+        <p class="row"><span data-i18n="bsc">Bacharelado em Ciência da Computação</span><span class="date" data-i18n="d_ufmg">mar 2025 – 2029 (previsão)</span></p>
+        <p class="note" data-i18n="dcc">Departamento de Ciência da Computação (DCC) · Belo Horizonte</p>
+        <p class="label" data-i18n="core">Disciplinas de base</p>
         <ul class="chips" data-i18n="chips">
           <li>Estruturas de Dados</li><li>Algoritmos</li><li>Bancos de Dados</li><li>Matemática Discreta</li><li>Probabilidade</li>
         </ul>
       </article>
 
-      <article class="card card--edu card--main">
-        <div class="edu__head">
-          <h3>Universidade Federal de Ciência e Inovação de Minas Gerais</h3>
-          <span class="tag tag--done" data-i18n="done">concluído</span>
+      <article class="entry" id="e-cefet">
+        <div class="entry__head">
+          <div class="entry__title">
+            <img class="proj-icon proj-icon--img" src="assets/img/institution-icons/ufcimg.png" alt="" width="40" height="40">
+            <h3>Universidade Federal de Ciência e Inovação de Minas Gerais</h3>
+          </div>
+          <span class="status status--done" data-i18n="done">concluído</span>
         </div>
-        <p class="line"><span data-i18n="tec">Técnico em Informática Integrado ao Ensino Médio</span><i></i><span class="date" data-i18n="d_cefet">mar 2022 – dez 2024</span></p>
-        <p class="muted" data-i18n="cefet_campus">Antigo CEFET-MG · Campus Divinópolis</p>
-        <p class="sub" data-i18n="core">Disciplinas de base</p>
+        <p class="row"><span data-i18n="tec">Técnico em Informática Integrado ao Ensino Médio</span><span class="date" data-i18n="d_cefet">mar 2022 – dez 2024</span></p>
+        <p class="note" data-i18n="cefet_campus">Antigo CEFET-MG · Campus Divinópolis</p>
+        <p class="label" data-i18n="core">Disciplinas de base</p>
         <ul class="chips" data-i18n="chips_cefet">
           <li>Fundamentos de Programação</li><li>Redes</li><li>Arquitetura de Computadores</li><li>Programação Orientada a Objetos</li>
         </ul>
-        <p class="sub" data-i18n="cap">Trabalho de conclusão</p>
-        <p class="tcc" data-i18n="tcc"><strong>FruitAdvisor</strong>: aplicativo Flutter que reconhece frutas por foto com uma rede neural convolucional e mostra informações nutricionais.</p>
-        <p class="sub" data-i18n="rep_h">Representação estudantil</p>
-        <p class="tcc" data-i18n="rep">Representante de classe em 2022.</p>
+        <p class="label" data-i18n="cap">Trabalho de conclusão</p>
+        <p class="text" data-i18n="tcc"><strong>FruitAdvisor</strong>: aplicativo Flutter que reconhece frutas por foto com uma rede neural convolucional e mostra informações nutricionais.</p>
+        <p class="label" data-i18n="rep_h">Representação estudantil</p>
+        <p class="text" data-i18n="rep">Representante de classe em 2022.</p>
       </article>
 
-      <div class="awards">
+      <div class="entry awards" id="e-awards">
         <div class="award">
           <span class="award__big">C1</span>
-          <div><strong>Cambridge English</strong><span class="muted" data-i18n="c1">Inglês avançado · 181/190</span></div>
+          <div><strong>Cambridge English</strong><span class="note" data-i18n="c1">Inglês avançado · 181/190</span></div>
         </div>
         <div class="award">
           <span class="award__big award__big--gold" data-i18n="gold">Ouro</span>
-          <div><strong data-i18n="onc">Olimpíada Nacional de Ciências</strong><span class="muted" data-i18n="medal">Medalha de ouro · 2022</span></div>
+          <div><strong data-i18n="onc">Olimpíada Nacional de Ciências</strong><span class="note" data-i18n="medal">Medalha de ouro · 2022</span></div>
         </div>
       </div>
 
-      <article class="card card--course">
-        <div class="edu__head">
-          <h3>Machine Learning Specialization</h3>
-          <span class="tag" data-i18n="ongoing">em curso</span>
+      <article class="entry" id="e-ml">
+        <div class="entry__head">
+          <div class="entry__title">
+            <img class="proj-icon proj-icon--img" src="assets/img/institution-icons/deeplearningai.png" alt="" width="40" height="40">
+            <h3>Machine Learning Specialization</h3>
+          </div>
+          <span class="status" data-i18n="ongoing">em curso</span>
         </div>
-        <p class="line"><span data-i18n="ml_org">DeepLearning.AI e Stanford Online · curso online (Coursera)</span><i></i><span class="date" data-i18n="d_ml">out 2026 – o momento</span></p>
+        <p class="row"><span data-i18n="ml_org">DeepLearning.AI e Stanford Online · curso online (Coursera)</span><span class="date" data-i18n="d_ml">out 2026 – o momento</span></p>
         <ul class="chips">
           <li>Supervised Machine Learning: Regression and Classification</li><li>Advanced Learning Algorithms</li><li>Unsupervised Learning, Recommenders, Reinforcement Learning</li>
         </ul>
@@ -118,77 +189,103 @@
   </section>
 
   <!-- ============ EXPERIÊNCIA ============ -->
-  <section class="block" id="experiencia" aria-labelledby="h-exp">
-    <div class="block__head">
+  <section class="sec" id="experiencia" aria-labelledby="h-exp">
+    <div class="sec__side">
       <h2 id="h-exp" data-i18n="exp">Experiência</h2>
-      <a class="small-link" data-i18n="cv" href="assets/cv/thales-amaral-cv-pt.pdf" data-i18n-href="cv_href" target="_blank" rel="noopener">Currículo completo</a>
+      <a class="side-link" data-i18n="cv" href="assets/cv/thales-amaral-cv-pt.pdf" data-i18n-href="cv_href" target="_blank" rel="noopener">Currículo completo</a>
     </div>
-
-    <div class="exp">
-      <article class="card card--wide">
-        <div class="edu__head">
-          <h3>SPEED Lab · DCC/UFMG</h3>
-          <span class="tag" data-i18n="current">atual</span>
+    <div class="sec__body">
+      <article class="entry" id="e-speed">
+        <div class="entry__head">
+          <div class="entry__title">
+            <img class="proj-icon proj-icon--img" src="assets/img/institution-icons/speed.png" alt="" width="40" height="40">
+            <h3>SPEED Lab · DCC/UFMG</h3>
+          </div>
+          <span class="status" data-i18n="current">atual</span>
         </div>
-        <p class="muted" data-i18n="speed_d">Pesquisa e desenvolvimento com bolsa Embrapii</p>
-        <p class="line"><span data-i18n="speed_r">Engenheiro de Software (P&amp;D)</span><i></i><span class="date" data-i18n="d_speed">nov 2026 – o momento</span></p>
+        <p class="note" data-i18n="speed_d">Pesquisa e desenvolvimento com bolsa Embrapii</p>
+        <p class="row"><span data-i18n="speed_r">Engenheiro de Software (P&amp;D)</span><span class="date" data-i18n="d_speed">nov 2026 – o momento</span></p>
       </article>
 
-      <article class="card card--wide">
-        <h3>Rehagro</h3>
-        <p class="muted" data-i18n="reh_d">IA generativa, agentes e pipelines de dados para as áreas internas</p>
-        <p class="line"><span data-i18n="reh_r1">Estagiário em Engenharia de IA e Dados</span><i></i><span class="date" data-i18n="d_reh1">out 2025 – out 2026</span></p>
-        <p class="line"><span data-i18n="reh_r2">Treinamento em Engenharia de Software</span><i></i><span class="date" data-i18n="d_reh2">jun 2025 – set 2025</span></p>
+      <article class="entry" id="e-rehagro">
+        <div class="entry__head">
+          <div class="entry__title">
+            <img class="proj-icon proj-icon--img" src="assets/img/institution-icons/rehagro.png" alt="" width="40" height="40">
+            <h3>Rehagro</h3>
+          </div>
+        </div>
+        <p class="note" data-i18n="reh_d">IA generativa, agentes e pipelines de dados para as áreas internas</p>
+        <p class="row"><span data-i18n="reh_r1">Estagiário em Engenharia de IA e Dados</span><span class="date" data-i18n="d_reh1">out 2025 – out 2026</span></p>
+        <p class="row"><span data-i18n="reh_r2">Treinamento em Engenharia de Software</span><span class="date" data-i18n="d_reh2">jun 2025 – set 2025</span></p>
         <ul class="points" data-i18n="points">
-          <li>Pipeline de transcrição e qualificação de mais de 1.000 vídeos educacionais com Whisper, Airflow e PostgreSQL.</li>
-          <li>Monitoramento de cerca de 80 VMs no Azure com Grafana e Prometheus.</li>
-          <li>Agente LLM com tool calling para consultar dados de VMs, custos e rede em linguagem natural.</li>
-          <li>Catálogo de metadados dos bancos corporativos em React e FastAPI, integrado a um agente de IA.</li>
-          <li>Soluções com RAG, MCP e avaliação de modelos, do levantamento de requisitos com as áreas até a validação.</li>
+          <li>Pipeline de transcrição e qualificação de <mark>mais de 1.000 vídeos</mark> educacionais com Whisper, Airflow e PostgreSQL.</li>
+          <li>Monitoramento de <mark>cerca de 80 VMs</mark> no Azure com Grafana e Prometheus.</li>
+          <li><mark>Agente LLM</mark> com tool calling para consultar dados de VMs, custos e rede em linguagem natural.</li>
+          <li><mark>Catálogo de metadados</mark> dos bancos corporativos em React e FastAPI, integrado a um agente de IA.</li>
+          <li>Soluções com <mark>RAG, MCP e avaliação de modelos</mark>, do levantamento de requisitos com as áreas até a validação.</li>
         </ul>
       </article>
 
-      <article class="card">
-        <h3>Universidade Federal de Ciência e Inovação de Minas Gerais</h3>
-        <p class="muted" data-i18n="res_d">Artigo publicado sobre apreensões de drogas em Divinópolis, com UFSJ e PMMG</p>
-        <p class="line"><span data-i18n="res_r">Pesquisador júnior</span><i></i><span class="date" data-i18n="d_res">jan 2023 – dez 2024</span></p>
+      <article class="entry" id="e-pesquisa">
+        <div class="entry__head">
+          <div class="entry__title">
+            <img class="proj-icon proj-icon--img" src="assets/img/institution-icons/ufcimg.png" alt="" width="40" height="40">
+            <h3>Universidade Federal de Ciência e Inovação de Minas Gerais</h3>
+          </div>
+        </div>
+        <p class="note" data-i18n="res_d">Artigo publicado sobre apreensões de drogas em Divinópolis, com UFSJ e PMMG</p>
+        <p class="row"><span data-i18n="res_r">Pesquisador júnior</span><span class="date" data-i18n="d_res">jan 2023 – dez 2024</span></p>
       </article>
 
-      <article class="card">
-        <h3 data-i18n="ufsj">UFSJ · Depto. de Toxicologia</h3>
-        <p class="muted" data-i18n="ufsj_d">Infraestrutura de TI para pesquisadores e laboratórios</p>
-        <p class="line"><span data-i18n="ufsj_r">Técnico de Suporte em TI</span><i></i><span class="date" data-i18n="d_ufsj">out 2023 – set 2024</span></p>
+      <article class="entry" id="e-ufsj">
+        <div class="entry__head">
+          <div class="entry__title">
+            <img class="proj-icon proj-icon--img" src="assets/img/institution-icons/ufsj.png" alt="" width="40" height="40">
+            <h3 data-i18n="ufsj">UFSJ · Depto. de Toxicologia</h3>
+          </div>
+        </div>
+        <p class="note" data-i18n="ufsj_d">Infraestrutura de TI para pesquisadores e laboratórios</p>
+        <p class="row"><span data-i18n="ufsj_r">Técnico de Suporte em TI</span><span class="date" data-i18n="d_ufsj">out 2023 – set 2024</span></p>
       </article>
     </div>
   </section>
 
   <!-- ============ PROJETOS ============ -->
-  <section class="block" id="projetos" aria-labelledby="h-proj">
-    <h2 id="h-proj" data-i18n="proj">Projetos</h2>
-
-    <div class="exp">
-      <article class="card">
-        <div class="edu__head">
-          <h3>Athenara</h3>
-          <span class="tag" data-i18n="wip">em desenvolvimento</span>
+  <section class="sec" id="projetos" aria-labelledby="h-proj">
+    <div class="sec__side">
+      <h2 id="h-proj" data-i18n="proj">Projetos</h2>
+    </div>
+    <div class="sec__body">
+      <article class="entry" id="e-athenara">
+        <div class="entry__head">
+          <div class="entry__title">
+            <img class="proj-icon" src="assets/img/project-icons/athenara.svg" alt="" width="40" height="40">
+            <h3>Athenara</h3>
+          </div>
+          <span class="status" data-i18n="wip">em desenvolvimento</span>
         </div>
-        <p class="muted" data-i18n="ath_d">Plataforma de proteção a mulheres em situação de violência doméstica: um aplicativo com botão de pânico e rede de apoio, e um painel para a equipe acompanhar casos, medidas protetivas e alertas.</p>
+        <p class="text" data-i18n="ath_d">Plataforma de proteção a mulheres em situação de violência doméstica.</p>
       </article>
 
-      <article class="card">
-        <div class="edu__head">
-          <h3><a href="https://github.com/amaralthalesalves/dcchub" target="_blank" rel="noopener">DCCHub</a></h3>
-          <span class="tag" data-i18n="wip">em desenvolvimento</span>
+      <article class="entry" id="e-dcchub">
+        <div class="entry__head">
+          <div class="entry__title">
+            <img class="proj-icon" src="assets/img/project-icons/dcchub.svg" alt="" width="40" height="40">
+            <h3><a href="https://github.com/amaralthalesalves/dcchub" target="_blank" rel="noopener">DCCHub</a></h3>
+          </div>
+          <span class="status" data-i18n="wip">em desenvolvimento</span>
         </div>
-        <p class="muted" data-i18n="dcchub_d">Hub independente dos estudantes do DCC/UFMG: avaliações anônimas de docentes e disciplinas, montador de grade, provas antigas e oportunidades de pesquisa e estágio.</p>
+        <p class="text" data-i18n="dcchub_d">Hub independente dos estudantes do DCC/UFMG: avaliações anônimas de docentes e disciplinas, montador de grade, provas antigas e oportunidades de pesquisa e estágio.</p>
       </article>
     </div>
   </section>
 
   <!-- ============ COMPETÊNCIAS ============ -->
-  <section class="block" id="competencias" aria-labelledby="h-skills">
-    <h2 id="h-skills" data-i18n="skills">Competências</h2>
-    <dl class="skills">
+  <section class="sec" id="competencias" aria-labelledby="h-skills">
+    <div class="sec__side">
+      <h2 id="h-skills" data-i18n="skills">Competências</h2>
+    </div>
+    <dl class="sec__body skills">
       <div><dt data-i18n="s_ai">IA e dados</dt><dd data-i18n="s_ai_d">LLMs, RAG, MCP, tool calling, avaliação de modelos, aprendizado de máquina, OpenAI API, Whisper, Airflow, PostgreSQL, MySQL, análise de dados</dd></div>
       <div><dt data-i18n="s_web">Backend e web</dt><dd>FastAPI, React, Node.js, Laravel, APIs REST</dd></div>
       <div><dt data-i18n="s_inf">Infraestrutura</dt><dd>Azure, Docker, Grafana, Prometheus, Linux, Shell, Git, DevOps</dd></div>
@@ -199,30 +296,35 @@
     </dl>
   </section>
 
-  <!-- ============ RODAPÉ ============ -->
-  <footer class="foot" id="contato">
-    <nav class="icons" aria-label="Contato" data-i18n-label="contact">
-      <a href="mailto:amaralthalesalves@gmail.com" aria-label="E-mail" title="amaralthalesalves@gmail.com">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm2 .9V17h14V7.4l-7 4.6-7-4.6Zm1.3-.4L12 10.8 17.7 7H6.3Z"/></svg>
-      </a>
-      <a href="assets/cv/thales-amaral-cv-pt.pdf" data-i18n-href="cv_href" target="_blank" rel="noopener" aria-label="Currículo em PDF" title="Currículo" data-i18n-label="cv_pdf">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l5 5v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm7 1.5V9h4.5L13 4.5ZM8 12v1.6h8V12H8Zm0 3.2v1.6h8v-1.6H8Z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/amaralthalesalves/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3.3 9h3.4v11H3.3V9Zm5.6 0h3.3v1.5h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.1 2.3 4.1 5.3V20h-3.4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V20H8.9V9Z"/></svg>
-      </a>
-      <a href="https://github.com/amaralthalesalves" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.7 9.7 0 0 0-3.1 18.9c.5.1.7-.2.7-.5v-1.7c-2.7.6-3.3-1.2-3.3-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.2-4.4-1.1-4.4-4.8 0-1.1.4-1.9 1-2.6-.1-.2-.4-1.2.1-2.6 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.6.6.7 1 1.5 1 2.6 0 3.7-2.3 4.6-4.4 4.8.3.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A9.7 9.7 0 0 0 12 2.5Z"/></svg>
-      </a>
-    </nav>
-    <p class="mail">amaralthalesalves@gmail.com</p>
-    <p class="copy">© 2026 Thales Amaral</p>
-    <button class="secret" type="button" id="aero-btn">Frutiger</button>
+  <!-- ============ CONTATO ============ -->
+  <footer class="sec" id="contato" aria-labelledby="h-contato">
+    <div class="sec__side">
+      <h2 id="h-contato" data-i18n="contact">Contato</h2>
+    </div>
+    <div class="sec__body contact">
+      <a class="mail" href="mailto:amaralthalesalves@gmail.com">amaralthalesalves@gmail.com</a>
+      <nav class="icons" aria-label="Contato" data-i18n-label="contact">
+        <a href="mailto:amaralthalesalves@gmail.com" aria-label="E-mail" title="amaralthalesalves@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm2 .9V17h14V7.4l-7 4.6-7-4.6Zm1.3-.4L12 10.8 17.7 7H6.3Z"/></svg>
+        </a>
+        <a href="assets/cv/thales-amaral-cv-pt.pdf" data-i18n-href="cv_href" target="_blank" rel="noopener" aria-label="Currículo em PDF" title="Currículo" data-i18n-label="cv_pdf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l5 5v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm7 1.5V9h4.5L13 4.5ZM8 12v1.6h8V12H8Zm0 3.2v1.6h8v-1.6H8Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/amaralthalesalves/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3.3 9h3.4v11H3.3V9Zm5.6 0h3.3v1.5h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.1 2.3 4.1 5.3V20h-3.4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V20H8.9V9Z"/></svg>
+        </a>
+        <a href="https://github.com/amaralthalesalves" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.7 9.7 0 0 0-3.1 18.9c.5.1.7-.2.7-.5v-1.7c-2.7.6-3.3-1.2-3.3-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.2-4.4-1.1-4.4-4.8 0-1.1.4-1.9 1-2.6-.1-.2-.4-1.2.1-2.6 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.6.6.7 1 1.5 1 2.6 0 3.7-2.3 4.6-4.4 4.8.3.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A9.7 9.7 0 0 0 12 2.5Z"/></svg>
+        </a>
+      </nav>
+      <p class="copy">© 2026 Thales Amaral <button class="secret" type="button" id="aero-btn">Frutiger</button></p>
+    </div>
   </footer>
 </main>
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/easter-egg.js"></script>
 <script src="assets/js/toc.js"></script>
+<script src="assets/js/timeline.js"></script>
 </body>
 </html>
