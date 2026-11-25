@@ -74,11 +74,13 @@
     tl_26d: "Finished the internship at Rehagro.",
     tl_26a: "<a href=\"#e-ml\" data-icon=\"deeplearningai\">Machine Learning Specialization</a> (DeepLearning.AI and Stanford).",
     tl_26b: "Software Engineer (R&amp;D) at <a href=\"#e-speed\" data-icon=\"speed\">SPEED Lab</a>.",
-    tl_26c: "Started <a href=\"#e-athenara\" data-icon=\"athenara\">Athenara</a> and <a href=\"#e-dcchub\" data-icon=\"dcchub\">DCCHub</a>.",
+    tl_26c: "Started <a href=\"#e-athenara\" data-icon=\"athenara\">Athenara</a>, <a href=\"#e-dcchub\" data-icon=\"dcchub\">DCCHub</a> and <a href=\"#e-passby\" data-icon=\"passby\">Passby</a>.",
     tl_29a: "Expected graduation from UFMG.",
 
     proj: "Projects",
     wip: "work in progress",
+    validating: "in validation",
+    passby_d: "Android app for passive proximity discovery, inspired by StreetPass: it records who you crossed paths with and the niches you share, without tracking location.",
     ath_d: "Protection platform for women facing domestic violence.",
     dcchub_d: "Independent hub for DCC/UFMG students: anonymous reviews of professors and courses, a schedule builder, past exams and research and internship opportunities.",
 

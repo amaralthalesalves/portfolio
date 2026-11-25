@@ -176,6 +176,8 @@ h3 a:hover { text-decoration-color: currentColor; }
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--live) 18%, transparent);
 }
 .status--done::before { background: var(--text-3); box-shadow: none; }
+/* ideia ainda em validação: ponto vazado */
+.status--idea::before { background: none; box-shadow: inset 0 0 0 1.5px var(--text-2); }
 
 .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .1rem 1.5rem; font-size: var(--t-sm); }
 .date { color: var(--text-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -258,6 +260,7 @@ h3 a:hover { text-decoration-color: currentColor; }
 .year__items a[data-icon="deeplearningai"] { --icon: url("../img/institution-icons/deeplearningai.png"); }
 .year__items a[data-icon="speed"] { --icon: url("../img/institution-icons/speed.png"); }
 .year__items a[data-icon="athenara"] { --icon: url("../img/project-icons/athenara.svg"); }
+.year__items a[data-icon="passby"] { --icon: url("../img/project-icons/passby.svg"); }
 .year__items a[data-icon="dcchub"] { --icon: url("../img/project-icons/dcchub.svg"); }
 .year__items a:hover { text-decoration: underline; text-decoration-color: var(--hair); text-underline-offset: 3px; }
 .year--now .year__n { color: var(--text); }
